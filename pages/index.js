@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import { useForm, useWatch } from 'react-hook-form'
-import React, {useEffect, useState} from 'react'
+import { useForm } from 'react-hook-form'
+import React from 'react'
 import { Result } from '@components/Result';
-import {model} from "../config/1bytemodel";
+import ReactGA from 'react-ga';
+
+const GA_TRACKING_ID = 'G-VF43563XKE';
+ReactGA.initialize(GA_TRACKING_ID);
 
 export default function Home() {
 
